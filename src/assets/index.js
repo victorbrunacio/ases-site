@@ -9,7 +9,6 @@ import melhorPrecoEletrica from "./melhorPrecoEletrica.jpg"
 import cardEngenheiro from "./cardengenheiro.jpg"
 import homenTrabalho from "./homenTrabalho.jpg"
 import baldeTinta from "./baldeTinta.jpg"
-import asTop from "./asTop.png"
 import homeSlogan from "./home-slogan.png"
 import compressorAr from "./compressor-ar-thumb.jpg"
 import imperialNova from "./imperial-nova-thumb.jpg"
@@ -28,7 +27,6 @@ export {
     cardEngenheiro,
     homenTrabalho,
     baldeTinta,
-    asTop,
     homeSlogan,
     compressorAr,
     imperialNova,
