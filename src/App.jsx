@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/sejarepresentante" element={<SejaRepresentante />} />
       </Routes>
-      <a href="https://api.whatsapp.com/send?phone=5521996024800&text=Ol%C3%A1%20achei%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20ajuda." target="_blank" className="fixed bottom-0 right-0">
+      <a href="https://api.whatsapp.com/send?phone=5521996024800&text=Ol%C3%A1%20achei%20voc%C3%AAs%20atrav%C3%A9s%20do%20site%20e%20preciso%20de%20ajuda." target="_blank" className="fixed bottom-0 right-0 z-10">
        <img src={whatsApp} alt="whatsapp" className="h-14 m-5"/>
       </a>
       <Footer />

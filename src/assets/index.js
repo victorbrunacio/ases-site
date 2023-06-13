@@ -13,6 +13,7 @@ import homeSlogan from "./home-slogan.png"
 import compressorAr from "./compressor-ar-thumb.jpg"
 import imperialNova from "./imperial-nova-thumb.jpg"
 import whatsApp from "./whats.png"
+import logoGrandeAsis from "./logoGrandeAss.png"
 
 
 export {
@@ -31,4 +32,5 @@ export {
     compressorAr,
     imperialNova,
     whatsApp,
+    logoGrandeAsis,
 }

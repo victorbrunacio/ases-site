@@ -5,7 +5,7 @@ import {AiFillThunderbolt} from "react-icons/ai"
 
 const Produtos = () => {
 
-  const paragraphCSS = 'cursor-pointer duration-75 hover:text-red-600'
+  const paragraphCSS = 'cursor-pointer duration-75 hover:text-red-600 max-md:border-b max-md:border-black'
   const [showTopic, setshowTopic] = useState("Produtos")
   const [test, settest] = useState(listaProdutos)
 
@@ -18,16 +18,17 @@ const Produtos = () => {
  
 
   return (
-    <div className='flex justify-center w-full p-10 
+    <div className='flex justify-center w-full p-10 min-h-screen overflow-auto 
     max-md:flex-col '>
-      <div className='flex flex-col  text-xs gap-5 w-[30%] 
-     max-md:w-full max-md:flex-row  max-md:justify-center max-md:pb-4'>
+      <div className='flex flex-col  gap-5 w-[30%] 
+     max-md:w-full  max-md:justify-center max-md:pb-4 max-md:gap-10'>
         <div>
           <h2 className='mb-0.5 font-semibold
          max-md:pb-1  '>
             ELÉTRICA
           </h2>
-          <div className='ml-1 text-gray-950'>
+          <div className='ml-1 text-gray-950 
+          max-md:flex max-md:flex-col max-md:gap-1'>
 
           <p className={paragraphCSS} onClick={()=>changeProdutos(1)}>Chuveiros e Resistências</p>
           <p className={paragraphCSS} onClick={()=>changeProdutos(2)}>Disjuntores</p>
@@ -37,9 +38,9 @@ const Produtos = () => {
           </div>
         </div>
 
-        <div className='  max-md:border-x max-md:p-2 max-md:pt-0  max-md:border-black'>
+        <div>
           <h2 className=' mb-0.5 font-semibold
-           max-md:pb-1  '>
+           max-md:pb-1'>
             COLAS E ADESIVOS
           </h2>
           <div className='ml-1 text-gray-950'>
@@ -53,7 +54,8 @@ const Produtos = () => {
            max-md:pb-1'>
             FERRAGENS E FERAMENTAS
           </h2>
-          <div className='ml-1 text-gray-950'>
+          <div className='ml-1 text-gray-950
+           max-md:flex max-md:flex-col max-md:gap-1'>
 
           <p className={paragraphCSS} onClick={()=>changeProdutos(11)}>Cadeados</p>
           <p className={paragraphCSS} onClick={()=>changeProdutos(12)}>Desengripantes</p>
@@ -63,16 +65,19 @@ const Produtos = () => {
         </div>
       </div>
 
-      <div className='flex w-full flex-wrap border border-r-0 border-t-0 border-b-0 m-2 box-border border-gray-500 gap-7
+      <div className='flex flex-col   w-full border border-r-0 border-t-0 border-b-0 m-2 box-border border-gray-500 
       max-md:border-hidden max-md:flex-col max-md:items-center max-md:justify-center'>
-        <h1 className=' w-full text-[1.2rem] 
-          max-md:w-auto'>
+
+        <h1 className=' w-full text-[2rem] ml-3 
+          max-md:w-auto max-md:text-[1.4rem]'>
         {showTopic}
         </h1>
+        <div className='flex flex-wrap w-full gap-5 mt-5'>
         {test.map((produtos, index)=> {
           return (
-            <div key={index} className='flex   w-[30%] flex-col items-center justify-center flex-wrap max-md:w-full' >
-                <img className='w-36 rounded shadow-lg' src={produtos.img} alt={produtos.name} />
+            <div key={index} className='flex flex-col  w-[20rem] items-center 
+            max-md:w-full' >
+                <img className='w-36 h-36 mb-2 rounded shadow-lg' src={produtos.img} alt={produtos.name} />
                 <p>{produtos.name}</p>
                 <Link to="/contato">
                    <p className='text-xs hover:text-red-600 flex justify-center items-center'>
@@ -82,6 +87,10 @@ const Produtos = () => {
             </div>
           )
         })}
+        </div>
+       
+        
+      
       </div>
     </div>
   )

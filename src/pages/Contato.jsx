@@ -26,29 +26,29 @@ const Contato = () => {
   };
 
   return (
-    <div className='flex p-10 gap-5 justify-center content-center text-[0.6rem] items-center 
+    <div className='flex p-10 gap-5 justify-center content-center text-[1rem] items-center 
     max-md:px-2'>
       <div className='flex flex-col items-start  
       max-md:mb-10'>
 
-        <div className='flex flex-col max-md:absolute max-md:top-12 max-md:left-4 max-md:mr-5
+        <div className='flex flex-col max-md:absolute max-md:top-[5rem] max-md:p-4 max-md:left-4 max-md:mr-5
         max-md:border-b-2 max-md:border-black max-md:border-opacity-50'>
 
-          <h1 className='text-xs font-serif font-bold pb-1 underline underline-offset-4
-      max-md:text-base max-md:font-sans '>
+          <h1 className='text-xl font-serif font-bold pb-1 underline underline-offset-4
+      max-md:text-base max-md:font-sans'>
             FALE CONOSCO
           </h1>
-          <p className='max-md:text-xs indent-3 pb-1'>Envie dúvidas, sugestões ou reclamações. Por este canal estaremos sempre conectados e prontos para lhe atender.</p>
+          <p className='max-md:text-sm indent-3 pb-1 max-md:mt-2 '>Envie dúvidas, sugestões ou reclamações. Por este canal estaremos sempre conectados e prontos para lhe atender.</p>
 
           <p className='max-md:text-xs flex items-center gap-2'><HiOutlineMail /> Solicite seu orçamento por e-mail: <span className='font-bold'>vendas@asesdistribuidora.com.br</span></p>
-          <p className='max-md:text-xs flex items-center gap-2'><BsTelephone/> Central de Vendas: <span className='font-bold'>21 3088-4848</span></p>
-          <p className='max-md:text-xs flex items-center gap-2'><BsWhatsapp/> Central de Vendas WhatsApp: <span className='font-bold'>21 99602-4800</span></p>
+          <p className='max-md:text-sm flex items-center gap-2'><BsTelephone/> Central de Vendas: <span className='font-bold'>21 3088-4848</span></p>
+          <p className='max-md:text-sm flex items-center gap-2'><BsWhatsapp/> Central de Vendas WhatsApp: <span className='font-bold'>21 99602-4800</span></p>
 
         </div>
 
 
         <form onSubmit={handleSubmit} className="flex flex-col justify-start mt-16 
-      max-md:mt-24">
+      max-md:mt-[10rem]">
           <div className="mb-4">
             <label htmlFor="nome" className="block mb-2  text-gray-700">
               Nome:
@@ -108,8 +108,8 @@ const Contato = () => {
 
       </div>
       <div>
-        <motion.img src={cardEngenheiro} alt="cardEngenheiro" className='rounded h-80 shadow-2xl mt-5 cursor-pointer
-      max-md:w-[15rem] max-md:h-[15rem]'
+        <motion.img src={cardEngenheiro} alt="cardEngenheiro" className='rounded h-[30rem] shadow-2xl mt-5 cursor-pointer
+      max-md:w-[15rem] max-md:h-[17rem]'
       whileTap={{scale:1.2, y:70}}
       transition={{duration:2}}
       />

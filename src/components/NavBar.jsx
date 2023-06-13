@@ -7,8 +7,8 @@ import { AiOutlineCloseCircle } from "react-icons/ai"
 
 
 const NavBar = () => {
-  const activeT = "duration-500  underline max-md:no-underline max-md:text-red-600 hover:text-white font-caveat max-md:border-gray-900  max-md:border-b"
-  const activef = "p-1 duration-500 hover:text-white font-caveat max-md:border-gray-900 max-md:border-b"
+  const activeT = "duration-500  underline max-md:no-underline max-md:text-red-600 hover:text-white font-caveat max-md:border-gray-900  max-md:border-b max-md:font-bold"
+  const activef = "p-1 duration-500 hover:text-white font-caveat max-md:border-gray-900 max-md:border-b max-md:font-bold"
 
   const [open, setOpen] = useState(false)
 
@@ -21,12 +21,12 @@ const NavBar = () => {
 
 
   return (
-    <div className='flex justify-evenly items-center border-solid border-black border-b  p-5 box-border h-[3rem] bg-gradient-to-r  from-white to-beje2 text-[1.2rem]
+    <div className='flex justify-evenly items-center border-solid border-black border-b  p-5 box-border h-[5rem] bg-gradient-to-r  from-white to-beje2 text-[2rem]
     max-md:flex max-md:justify-start max-md:p-2 
     '>
    
       <NavLink to="/">
-        <img src={logoAses} alt="logoAses" className='h-8  ml-7 max-md:relative ' />
+        <img src={logoAses} alt="logoAses" className='h-10  ml-7 max-md:relative ' />
       </NavLink>
 
       <p className='md:hidden text-base ml-7'>Distribuidora atacadista</p>

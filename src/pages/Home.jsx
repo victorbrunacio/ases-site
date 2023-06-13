@@ -13,9 +13,9 @@ const Home = () => {
     <div className='flex flex-col items-center justify-center overflow-hidden'>
       <Slider />
       <SliderMobile/>
-      <div className='w-full h-14 bg-pattern-homeSlogan bg-cover flex items-center justify-center'>
-        <p className='text-lg text-white font-sans font-light
-        max-md:ml-6 max-md:mr-6'>Há mais de 20 anos Distribuindo com qualidade e agilidade!</p>
+      <div className='w-full h-28 bg-pattern-homeSlogan bg-cover mt-5 flex items-center justify-center'>
+        <p className='text-2xl text-white font-sans font-bold
+        max-md:ml-6 max-md:mr-6 '>Há mais de 20 anos Distribuindo com qualidade e agilidade!</p>
       </div>
 
       <div className='flex justify-center items-center flex-col my-5 gap-4
