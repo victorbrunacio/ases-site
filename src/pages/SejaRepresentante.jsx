@@ -45,7 +45,7 @@ const SejaRepresentante = () => {
                 />
             </div>
 
-            <div className='w-full md:flex md:flex-col md:justify-center md:mr-40 md:mt-16 max-md:mt-24'>
+            <div className='w-full md:flex md:flex-col md:justify-center md:mr-40 md:mt-16 max-md:mt-24 max-md:mr-2'>
                 <form onSubmit={handleSubmit} className="max-w-sm mx-auto
             max-md:ml-2">
                     <div className="mb-4">

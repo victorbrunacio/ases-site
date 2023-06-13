@@ -19,7 +19,7 @@ const Produtos = () => {
 
   return (
     <div className='flex justify-center w-full p-10 min-h-screen overflow-auto 
-    max-md:flex-col '>
+    max-md:flex-col max-md:p-5'>
       <div className='flex flex-col  gap-5 w-[30%] 
      max-md:w-full  max-md:justify-center max-md:pb-4 max-md:gap-10'>
         <div>
